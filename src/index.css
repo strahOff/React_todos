@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;700&family=Titillium+Web&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #373E45;
+  color: #FFFFFF;
+}
+
+main {
+  max-width: 1569px;
+  margin: 80px;
+}
+
+h1 {
+  line-height: 58px;
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  list-style: none;
+}
+
+section ul li {
+  border: 1px solid #4B5258;
+  padding: 1rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.control{
+  border: 1px solid #ccc;
+  background-repeat: 5px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.leftsection {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  margin: 10px; 
+  background-color: #eee;
+  border: 1px solid #000;
+  border-radius: 6px;
+  width: 119.23px;
+}
+
+.leftsection.active {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  margin: 10px; 
+  border: 1px solid #000;
+  width: 119.23px;
+
+  background-color: #27c702;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  transition: all 150ms ease-in-out;
+}
+
+.delete-icon{
+  float: right;
+  cursor: pointer;
+  transform: scale(1.2);
+  color: rgb(33, 33, 33);
+}
+.edit-icon {
+  float: right;
+  margin-right: 25px;
+  cursor: pointer;
+  transform: scale(1.2);
+  color: rgb(33, 33, 33);
+}
+
+.description {
+  margin-bottom: 48px;
+  opacity: 0.3;
+  font-size: 24px;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  border-radius: 8px;
+  .HeaderTableId { width: 47px; height: 32px;}
+  .HeaderTableUserName { width: 1354px; height: 32px; text-align: left; padding-left: 12px; }
+  .HeaderTableCount {width: 168px; height: 32px; text-align: left; padding-left: 12px;}
+  .TableId {width: 47px; height: 80px; text-align: center;}
+  .TableUserName {width: 1354px; height: 80px; text-align: left; padding-left: 12px; }
+  .TebleCount {width: 168px; height: 80px; text-align: left; padding-left: 12px;}
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.04); 
+}
+
+td{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+tbody tr:hover {
+  background-color: rgb(170, 97, 70);
+  transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 402px){
+  main {
+    max-width: 834px;
+    margin: 40px;
+  }
+  h1 {
+    line-height: 29px;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .description {
+    margin-bottom: 24px;
+    opacity: 0.3;
+    font-size: 12px;
+
+  }
+}
